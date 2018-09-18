@@ -17,6 +17,28 @@ main {
 .fullcard img {
     width: 100%;
 }
-.clearfix{
+
+}
+.clearfix {
     clear:100%;
+}
+.column1 {
+    float: left;
+    width: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 130%;
+    background-color: coral;
+}
+
+.column2 {
+    float: right;
+    width: 50%;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
