@@ -1,27 +1,34 @@
 main {
     width: 960px;
     margin: 0px auto;
-    background color: aliceblue;
+    background-color: aliceblue;
 }
-.fullcard {
-    width: 45%;
+.fullcard-container {
+    width:600px;
+
 }
-.fullcard:first-child{
+.column2 {
     float:left;
+    width:200px;
+      
 
 }
-.fullcard:last-child{
-    float:right;
+.column3 {
+    float:left;
+    width:200px;    
+   
 }
 
-.fullcard img {
-    width: 100%;
+.column4 {
+    float: left;
+    
+   
 }
 
-}
 .clearfix {
     clear:100%;
 }
+
 .column1 {
     float: left;
     width: 50%;
@@ -31,14 +38,15 @@ main {
 }
 
 .column2 {
-    float: right;
+    float: left;
     width: 50%;
 }
 
 
 /* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
+.row {
+    float: right;
+    width: 50%;
+    max-height: 200px;
+    overflow: scroll;
 }
