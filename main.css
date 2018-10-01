@@ -1,0 +1,64 @@
+body {
+    margin: 0px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0px;
+}
+
+li {
+    display: inline-block;
+}
+
+nav {
+    background-color: gold;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+main {
+    margin-top: 158px;
+    width: 100%;
+    padding: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(252, 186, 142);
+}
+
+.relative-position {
+    position: relative;
+    width: 350px;
+    height: 650px;
+    background-color: yellowgreen;
+    left: 100px;
+    top: 50px;
+
+}
+
+.absolute-position {
+
+    position: absolute;
+    width: 75px;
+    height: 280px;
+    background-color: blueviolet;
+    top: 50px;
+    left: 50px;
+}
+
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+ }
