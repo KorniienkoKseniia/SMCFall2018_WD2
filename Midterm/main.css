@@ -1,0 +1,40 @@
+.column {
+    float: left;
+    width: 25%;
+    column-gap: 40px;
+    color: lightblue; 
+    font-family: 'Charmonman', cursive;
+}
+
+p::first-letter { 
+    font-size: 200%;
+    color: #8A2BE2;
+}
+
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+p::first-letter { 
+    font-size: 200%;
+    color: #8A2BE2;
+}
+
+@media screen and (max-width: 768px) {
+    .column {
+        width: 100%;
+    }
+    .column {
+        float: left;
+    }
+    
+    .left {
+        width: 25%;
+    }
+    
+    .right {
+        width: 75%;
+    }
