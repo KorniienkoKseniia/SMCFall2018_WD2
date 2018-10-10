@@ -3,11 +3,29 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: rgb(133, 132, 132);
+    background-color: #A1A3E8;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   text-align: center;
 }
+
+@media screen and (max-width: 768px)
 
 li {
     float: left;
+}
+
+.container {
+    text-align: center;
+    color: white;
+    font-family: cursive;
+    font-size: 20px;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 li a {
@@ -18,14 +36,21 @@ li a {
     text-decoration: none;
 }
 
-
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #FF99BC;
+    color: white;
+    text-align: center;
+}
 .row {
     display: flex;
     flex-wrap: wrap;
     padding: 0 4px;
   }
   
-  /* Create two equal columns that sits next to each other */
   .column {
     flex: 50%;
     padding: 0 4px;
@@ -36,4 +61,6 @@ li a {
     vertical-align: middle;
   }
 
-  
+
+
+
