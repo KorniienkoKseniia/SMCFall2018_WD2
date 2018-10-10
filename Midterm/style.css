@@ -61,6 +61,8 @@ li a {
     vertical-align: middle;
   }
 
-
+  footer { 
+    display: block;
+}
 
 
