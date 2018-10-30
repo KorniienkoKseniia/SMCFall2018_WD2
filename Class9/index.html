@@ -12,13 +12,17 @@
     <div class="button-container">
         <button onclick="changeMyText()">Change text</button>
         <button onclick="changeMyColor()">Change colors</button>
+<<<<<<< HEAD
         <button onclick="changeMyMood()">Change mood</button>
         <button onclick="changeMyGoals()">Change myGoals</button>
+=======
+>>>>>>> 36431d51684217a94b86a667bf6343c53a42b4fc
         </div>
 
     <h1 id="docHeader">Hello, Sky!</h1>
     <script>
         var docHeader = document.getElementById("docHeader");
+<<<<<<< HEAD
         document.style.fontFamily = "Impact,Charcoal,sans-serif";
 
         document.body.style.backgroundImage = "url('italy.jpg)";
@@ -40,10 +44,21 @@
         }
 
         var changeMyMood = function(){
+=======
+        var changeMyText = function(){
+            // This is my header text
+            var myText = "Goodbye, Sky!";
+            
+            docHeader.innerHTML = myText;
+        }
+
+        var changeMyColor = function(){
+>>>>>>> 36431d51684217a94b86a667bf6343c53a42b4fc
             var red = Math.random()*255;
             var green = Math.random()*255;
             var blue = Math.random()*255;
             var RGBval = "rgb(" + red +", " + green +", " + blue + ")";
+<<<<<<< HEAD
             docHeader.style.color = RGBval; //rgb(+ red +, 0, 255);
             
         }
@@ -58,6 +73,23 @@
         
         docHeader.style.fontSiza = myTextSize + "px";
        
+=======
+            docHeader.style.color = RGBval; //rgb(+ red +, 0, 255)
+        }
+        //this is a number value for my header font size
+        // var myTextSize = Math.random()*100;
+
+        
+        
+        
+
+        console.log(docHeader);
+
+        
+        docHeader.style.fontSiza = myTextSize + "px";
+       
+
+>>>>>>> 36431d51684217a94b86a667bf6343c53a42b4fc
         </script>
     
 </body>
