@@ -12,17 +12,20 @@
     <div class="button-container">
         <button onclick="changeMyText()">Change text</button>
         <button onclick="changeMyColor()">Change colors</button>
-<<<<<<< HEAD
+
         <button onclick="changeMyMood()">Change mood</button>
         <button onclick="changeMyGoals()">Change myGoals</button>
-=======
->>>>>>> 36431d51684217a94b86a667bf6343c53a42b4fc
+        <button onclick="showMyText()">Show My Text</button>
+        <button onclick="hideMyText()">Hide My Text</button>
+        <button onclick="addBackgroundColor()">Add Background color</button>
+        <button onclick="addPicture()">Add Picture</button>
+
         </div>
 
     <h1 id="docHeader">Hello, Sky!</h1>
     <script>
         var docHeader = document.getElementById("docHeader");
-<<<<<<< HEAD
+
         document.style.fontFamily = "Impact,Charcoal,sans-serif";
 
         document.body.style.backgroundImage = "url('italy.jpg)";
@@ -31,20 +34,35 @@
         var changeMyText = function(){
             // This is my header text
             var myText = "Goodbye, Sky!";
-         
             docHeader.innerHTML = myText;
         }
+
         var changeMyColor = function(){
             var red = Math.random()*255;
             var green = Math.random()*255;
             var blue = Math.random()*255;
             var RGBval = "rgb(" + red +", " + green +", " + blue + ")";
             docHeader.style.color = RGBval; //rgb(+ red +, 0, 255);
-            
-        }
+            }
 
         var changeMyMood = function(){
-=======
+
+            var hideMyText = function(){
+            var myText = "Hello,Sky!";
+            document.getElementById('docHeader').style.display = 'block';
+            docHeader.innerHTML = myText;
+        }
+
+        var showMyText = function(){
+            var myText = "Hello, Sky!"
+            document.getElementById('docHeader').style.display = 'block';
+            docHeader.innerHTML = myText;
+        }
+
+ var addBackgroundColor = function(){
+     document.body.style.backgroundColor = "#c7cc28";
+ }
+
         var changeMyText = function(){
             // This is my header text
             var myText = "Goodbye, Sky!";
@@ -53,17 +71,21 @@
         }
 
         var changeMyColor = function(){
->>>>>>> 36431d51684217a94b86a667bf6343c53a42b4fc
+
             var red = Math.random()*255;
             var green = Math.random()*255;
             var blue = Math.random()*255;
             var RGBval = "rgb(" + red +", " + green +", " + blue + ")";
-<<<<<<< HEAD
+
             docHeader.style.color = RGBval; //rgb(+ red +, 0, 255);
             
         }
 
-       
+        var addPicture = function(){
+            var x = document.createElement ("IMG");
+            x.setAttribute("src","images/italy.jpg")
+            document.body.appendChild(x);
+        }
         //this is a number value for my header font size
         // var myTextSize = Math.random()*100;
         
@@ -73,7 +95,6 @@
         
         docHeader.style.fontSiza = myTextSize + "px";
        
-=======
             docHeader.style.color = RGBval; //rgb(+ red +, 0, 255)
         }
         //this is a number value for my header font size
@@ -88,8 +109,6 @@
         
         docHeader.style.fontSiza = myTextSize + "px";
        
-
->>>>>>> 36431d51684217a94b86a667bf6343c53a42b4fc
         </script>
     
 </body>
