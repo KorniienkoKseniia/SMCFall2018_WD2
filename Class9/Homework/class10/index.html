@@ -19,6 +19,11 @@
   <div class="button-container">
     <button onclick="showHeader()" id="showButton">Show Bamboleo!</button>
     <button onclick="hideHeader()" id="hideButton">Hide Bamboleo!</button>
+    <button onclick="changeMyColor()" id="changeMyColor">Change My color</button>
+    <button onclick="donotchangeColor()" id="donotchangeColor">Do not change color</button>
+    <button onclick="addPicture()" id="addpicture">Add Picture</button>
+    <button onclick="hidePicture()" id="hidePicture">Hide Picture</button>
+
   </div>
    <p id="message"></p>
    <script>
@@ -41,6 +46,40 @@
       }
       header.style.visibility = "hidden";
     }
+
+
+  var changeMyColor = function(){
+var red = Math.random()*255;
+var green = Math.random()*255;
+var blue = Math.random()*255;
+var RGBval = "rgb(" + red +", " + green +", " + blue + ")";
+var RGBval = "rgb(" + red + ", " + green + ", " + blue + ")";
+docHeader.style.color = RGBval; //rgb(+ red +, 0, 255);
+document.getElementById("message").innerText = "Color is already changed!";
+}
+
+     function donotchangeColor(){
+        document.getElementById("message").innerText = "Color is not changeable!";
+      }
+
+   var addPicture = function(){
+            var x = document.createElement ("img");
+            x.setAttribute("src","images/1.jpg")
+            document.body.appendChild(x);
+            document.getElementById("message").innerText = "The picture is already shown! Do not click more otherwise you will get the page full of Bamboleos!";
+        }
+
+    
+     function hidePicture(){
+      document.getElementById("message").innerText = "";
+      document.getElementById("showButton").removeAttribute("disabled");
+       if(header.style.visibility === "hidden"){
+        document.getElementById("hideButton").setAttribute("disabled", "disabled");
+        document.getElementById("message").innerText = "Bamboleo is already hidden!";
+      }
+      header.style.visibility = "hidden";
+    }
+    
    </script>
 </body>
 </html> 
