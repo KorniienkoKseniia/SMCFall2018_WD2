@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+     <div class="button-container">
+        <button id="imgToggle">Hide Bamboleo</button>
+        <button id="imgSwitch">Switch Bamboleo</button>
+    </div>
+     <h1>This is Bamboleo dance!</h1>
+     <div class="img-container">
+        <img src="http://riograndegames.com/uploads/Game/Preview-1_30.jpeg" alt="bamboleo" class="page-img">
+        <img src="https://img.discogs.com/vlrd5PP5MdyDVXEWh6Rypud8Z18=/fit-in/555x556/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1350064-1263042859.jpeg.jpg" alt="Another bamboleo" class="page-img" style="display:none;">
+    </div>
+     <script>
+        $(document).ready(function(){
+             $('#imgToggle').click(function(){
+                imageToggle();
+            });
+            $('#imgSwitch').click(function(){
+                imageSwitch();
+            });
+             var imageToggle = function(){
+                // see https://api.jquery.com/toggle-event/
+                $('.img-container').toggle();
+                // see https://api.jquery.com/css/
+                if($('.img-container').css('display') === 'none'){
+                    $('#imgToggle').text("Show Bamboleo");
+                }
+                else {
+                    $('#imgToggle').text("Hide Bamboleo");
+                }
+            }
+             var imageSwitch = function(){
+                // see https://api.jquery.com/toggle-event/
+                $('.page-img').toggle();
+            }
+        });
+    </script>
+    
+</body>
+</html>
