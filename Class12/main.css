@@ -1,0 +1,25 @@
+.box {
+    min-width: 400px;
+    min-height: 200px;
+}
+
+
+.box1 {
+    min-width: 400px;
+    min-height: 200px;
+    background-color: lightgreen;
+}
+
+.box2 {
+    min-width: 400px;
+    min-height: 200px;
+    background-color: thistle;
+}
+
+.bordered {
+    border: 1px solid darkgoldenrod;
+}
+
+.margin20 {
+    margin: 20px;
+}
