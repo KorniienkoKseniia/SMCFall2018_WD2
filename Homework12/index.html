@@ -1,0 +1,71 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+
+        <div class="button-container">
+                <button id="imgToggle">Add More Paris</button>
+                
+            </div>
+             <h1>Do you love Paris?</h1>
+             <div id="featured-items">
+                    <div class="box" ><img src="images/1.jpg"></div>
+                    <div class="box"><img src="images/2.jpg"></div>
+                    <div class="box"><img src="images/3.jpg"></div>
+                    <div class="box" ><img src="images/4.jpg"></div>
+                    <div class="box"><img src="images/5.jpg"></div>
+                    <div class="box"><img src="images/6.jpg"></div>
+                    <div class="box" ><img src="images/7.jpg"></div>
+                    <div class="box"><img src="images/8.jpg"></div>
+                    <div class="box"><img src="images/9.jpg"></div>
+               
+            </div>
+</html>
+             <script>
+                $(document).ready(function(){
+                     $('#imgToggle').click(function(){
+                        imageToggle();
+                    });
+                   
+                   
+                     var imageToggle = function(){
+                        // see https://api.jquery.com/toggle-event/
+                        $('.img-container').toggle();
+                        // see https://api.jquery.com/css/
+                        if($('.img-container').css('display') === 'none'){
+                            $('#imgToggle').text("More Paris");
+                        }
+                        else {
+                            $('#imgToggle').text("More Paris");
+                        }
+                    }
+
+                });
+
+
+  $(function() {
+    $(".rslides").responsiveSlides();
+  });
+
+  var removeThemAll = function(){
+        $('h3').remove();
+    }
+
+    $('#remove').click(function(){
+        removeThemAll();
+    });
+</script>
+            
+            
+        </body>
+        </html>
+
+            
+      
