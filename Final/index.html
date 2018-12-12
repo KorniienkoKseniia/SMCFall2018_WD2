@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<title>Goodwill</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<body>
+
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="index.html" class="w3-bar-item w3-button" ><b>GOODWILL</b> </a>
+
+   
+    <div class="w3-right w3-hide-small">
+      <a href="About.html" class="w3-bar-item w3-button">About</a>
+      <a href="Donate.html" class="w3-bar-item w3-button">Donate</a>
+      <a href="Blog.html" class="w3-bar-item w3-button">Blog</a>
+
+    </div>
+  </div>
+</div>
+
+
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  <img class="w3-image" src="images/15.png" alt="Architecture" width="1500" height="800">
+    <div class="w3-display-middle w3-margin-top w3-center">
+      
+
+      <h1 class="PopUp" id="docHeader">It’s simple: donate stuff, create jobs. When you donate your new and gently used items to Goodwill, we sell them in our stores or on our online auction site and use the revenue generated to fund valuable employment training and job placement services for people in your community.</h1>
+  
+    <button class="btn" onclick="showHeader()" id="showButton">Learn More</button>
+   <p id="message"></p>
+   
+
+    </div>
+</header>
+
+
+<div class="w3-content w3-padding" style="max-width:1564px">
+
+
+  
+  
+<div class="row">
+      <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 header-center">LAST NEWS</h3>
+  <div class="column">
+        <a href="Blog.html" class="w3-bar-item w3-button"><img src="images/111.jpg" alt="John" style="width:100%; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);">
+        </a>
+
+  </div>
+  
+  <div class="column">
+        <a href="Blog.html" class="w3-bar-item w3-button"><img src="images/222.jpg" alt="John" style="width:100%; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);">
+        </a>
+
+  </div>
+  
+  <div class="column">
+        <a href="Blog.html" class="w3-bar-item w3-button"><img src="images/333.jpg" alt="John" style="width:100%; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);">
+        </a>
+
+  </div>
+  
+  <div class="column">
+        <a href="Blog.html" class="w3-bar-item w3-button"><img src="images/444.jpg" alt="John" style="width:100%; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);">
+        </a>
+
+  </div>
+</div>
+
+</div>
+
+
+<footer class="w3-center w3-black w3-padding-16">
+  <p>Transforming Lives!</p>
+</footer>
+
+<script>
+$("#docHeader").hide();
+
+$(document).ready(function(){
+    $("button").click(function(){
+        $("#docHeader").animate({
+            height: 'toggle'
+        });
+    });
+});
+
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+   </script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<title>Goodwill</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+<body>
+
+ 
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="index.html" class="w3-bar-item w3-button" ><b>GOODWILL</b> </a>
+  
+    <div class="w3-right w3-hide-small">
+      <a href="About.html" class="w3-bar-item w3-button">About</a>
+      <a href="Donate.html" class="w3-bar-item w3-button">Donate</a>
+      <a href="Blog.html" class="w3-bar-item w3-button">Blog</a>
+
+    </div>
+  </div>
+</div>
+
+ 
+
+
+<div class="w3-container" id="about">
+<br> <br>
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">DONATE</h3>
+    <p>When you donate to Goodwill, you’ve taken the opportunity to become a job creator and make a significant difference in the lives of individuals living in your community.</p>
+<div class="bg-img">
+      <div class="container">
+        <h1>Please fill out the application</h1>
+
+        <form action="" method="POST">
+            <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstname" class="form-input" required>
+            </div>
+
+            <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastname" class="form-input">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Adress</label>
+                <input type="text" id="email" name="emailadress" class="form-input">
+            </div>
+
+            <label for="messageText">Message</label>
+            <br>
+            <textarea></textarea>
+
+
+            </form>
+                        <br>
+
+            
+            <button id="submitForm" disabled>Submit</button>
+      </div>
+
+</div>
+</div>
+
+
+
+    <script>
+        $(document).ready(function(){
+            $('input, textarea').blur(function(){
+
+                    $('.form-group input, .form-group textarea').each(function(){
+                        
+                        if($(this).val() != ''){
+                            $('#submitForm').removeAttr('disabled');
+                            
+                        }
+
+                        else {
+                            $('#submitForm').attr('disabled', 'disabled');
+                    
+                        }
+                    });
+            });
+
+            $('#submitForm').click(function(){
+                $('form').before('<div class="alert alert-success"><h2>Thank you for your contribution!</h2></div>');
+                $('form').remove();
+            });
+        });
+    </script>
+    
+<footer class="w3-center w3-black w3-padding-16">
+    <p>Transforming Lives!</p>
+  </footer>
+</body>
+</html>

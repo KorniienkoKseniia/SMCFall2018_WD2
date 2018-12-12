@@ -5,87 +5,106 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-    $("button").click(function(){
-        $("p").toggle();
-    });
-});
-</script>
+
 <body>
-<<<<<<< HEAD
 
+<!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-wide w3-padding w3-card">
     <a href="index.html" class="w3-bar-item w3-button" ><b>GOODWILL</b> </a>
 
+    <!-- Float links to the right. Hide them on small screens -->
     <div class="w3-right w3-hide-small">
       <a href="About.html" class="w3-bar-item w3-button">About</a>
       <a href="Donate.html" class="w3-bar-item w3-button">Donate</a>
       <a href="Blog.html" class="w3-bar-item w3-button">Blog</a>
 
-=======
-
-    
-<div class="w3-top">
-  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-    <a href="index.html" class="w3-bar-item w3-button" ><b>GOODWILL</b> </a>
-
-    <div class="w3-right w3-hide-small">
-      <a href="About.html" class="w3-bar-item w3-button">About</a>
-      <a href="Donate.html" class="w3-bar-item w3-button">Donate</a>
-      <a href="Blog.html" class="w3-bar-item w3-button">Blog</a>
-
->>>>>>> dd6c4e3e4b1d340f828819b1c70c36da83fbcaed
     </div>
   </div>
 </div>
 
-<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
-  <img class="w3-image" src="images/15.jpg" alt="Architecture" width="1500" height="800">
-    <div class="w3-display-middle w3-margin-top w3-center">
 
-<<<<<<< HEAD
-      <button>Show Our Team</button>
-      <p>Here he wants to see the team of workers. In the images folder I named the files 1,2,3,4
-        Steve Preston, CEO
-        Lorna G. Utley, CEO
-        David Bloom, Volunteer
-        Rebecca Volvang, Volunteer
-      </p>
-=======
+
+
+<!-- Header -->
 <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
-  <img class="w3-image" src="images/15.png" alt="Goodwill" width="1500" height="800">
+  <img class="w3-image" src="images/15.png" alt="Architecture" width="1500" height="800">
     <div class="w3-display-middle w3-margin-top w3-center">
-     
-        
-      <button>Show Our Promise</button>
-      <p>Together, we are the face of Goodwill. Every time you donate, shop or use our services, you help Transform Lives Through the Power of Work.</p>
->>>>>>> dd6c4e3e4b1d340f828819b1c70c36da83fbcaed
+      <!-- <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min" id="show"><b>BR</b></span> <span class="w3-hide-small w3-text-light-grey">Architects</span></h1> -->
+
+      <h1 class="PopUp" id="docHeader">It’s simple: donate stuff, create jobs. When you donate your new and gently used items to Goodwill®, we sell them in our stores or on our online auction site and use the revenue generated to fund valuable employment training and job placement services for people in your community.</h1>
+  
+    <button class="btn" onclick="showHeader()" id="showButton">Learn More</button>
+   <p id="message"></p>
+   
 
     </div>
 </header>
 
 
-<<<<<<< HEAD
+<!-- Page content -->
 <div class="w3-content w3-padding" style="max-width:1564px">
 
 
+  
+  
+<div class="row">
+      <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 header-center">LAST NEWS</h3>
+  <div class="column">
+        <a href="Blog.html" class="w3-bar-item w3-button"><img src="images/111.jpg" alt="John" style="width:100%; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);">
+        </a>
+
+  </div>
+  
+  <div class="column">
+        <a href="Blog.html" class="w3-bar-item w3-button"><img src="images/222.jpg" alt="John" style="width:100%; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);">
+        </a>
+
+  </div>
+  
+  <div class="column">
+        <a href="Blog.html" class="w3-bar-item w3-button"><img src="images/333.jpg" alt="John" style="width:100%; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);">
+        </a>
+
+  </div>
+  
+  <div class="column">
+        <a href="Blog.html" class="w3-bar-item w3-button"><img src="images/444.jpg" alt="John" style="width:100%; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);">
+        </a>
+
+  </div>
+</div>
+<!-- End page content -->
+</div>
+
+
+
+
+<!-- Footer -->
 <footer class="w3-center w3-black w3-padding-16">
-  <p>Transforning Lives</p>
-  <p>Contact Us 323.223.1211</p>
+  <p>Copyright by <a>Kseniia Korniienko</a></p>
 </footer>
 
-=======
+<script>
+$("#docHeader").hide();
 
-<div class="w3-content w3-padding" style="max-width:1564px"></div>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("#docHeader").animate({
+            height: 'toggle'
+        });
+    });
+});
 
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
 
-
-<footer class="w3-center w3-black w3-padding-16">
-  <p>Transforming Lives</p>
-</footer>
-
->>>>>>> dd6c4e3e4b1d340f828819b1c70c36da83fbcaed
+   </script>
 </body>
 </html>
